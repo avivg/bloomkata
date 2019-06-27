@@ -1,1 +1,8 @@
 wordlist.txt
+CMakeCache.txt
+CMakeFiles/
+Makefile
+Testing/
+cmake_install.cmake
+runTests
+
