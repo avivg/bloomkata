@@ -11,7 +11,7 @@ namespace BloomKata {
     class ReferenceResult {
     public:
         ReferenceResult(const std::string& wordlistfile);
-        const bool operator[](std::string word) const;
+        bool operator[](std::string word) const;
         size_t size() const {return loaded_words.size();}
     
     private:
@@ -22,11 +22,11 @@ namespace BloomKata {
 
     public:
         StdSpellCheck(const std::string& wordlistfile);
-        const bool operator[](std::string word) const;
+        bool operator[](std::string word) const;
 
     private:
         std::bitset<nof_bits> found;
-        static inline const size_t word_bit_idx(std::string word);
+        static inline size_t word_bit_idx(std::string word);
     };
 }
 
