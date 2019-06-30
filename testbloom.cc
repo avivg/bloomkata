@@ -49,5 +49,5 @@ TEST(BloomTest, StdTest) {
 
 int main(int argc, char *argv[]) {
     testing::InitGoogleTest(&argc, argv);
-    auto retval = RUN_ALL_TESTS();
+    return RUN_ALL_TESTS();
 }
